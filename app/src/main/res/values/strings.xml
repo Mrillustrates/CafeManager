@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CafeManager</string>
+    <string name ="category_interviews"> Candidate Interviews</string>
+    <string name = "category_status"> Status </string>
+</resources>

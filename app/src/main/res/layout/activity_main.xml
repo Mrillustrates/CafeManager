@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tan_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id ="@+id/interviews"
+        style="@style/CategoryStyle"
+        android:text="@string/category_interviews"
+        android:background="@color/category_interview"
+        android:layout_marginTop="48dp"
+        android:paddingLeft="88dp"
+        android:layout_marginBottom="48dp"
+        />
+
+    <TextView
+        android:id="@+id/status"
+        style="@style/CategoryStyle"
+        android:background="@color/category_status"
+        android:text="@string/category_status"
+        android:paddingLeft="150dp"
+        />
+
+</LinearLayout>

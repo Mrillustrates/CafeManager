@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:id = "@+id/position_picture"/>
+    <RelativeLayout
+        android:id = "@+id/text_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/position_picture"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop = "16dp">
+
+    <CheckBox android:id="@+id/checkbox_hired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hired" />
+    <CheckBox android:id="@+id/not_hired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight= "1"
+        android:text="Not Hired"
+        android:layout_toRightOf="@id/checkbox_hired"
+    />
+        <CheckBox
+            android:id= "@+id/ncns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "NCNS"
+            android:layout_weight= "1"
+            android:layout_toRightOf="@id/not_hired"/>
+        <TextView
+            android:id = "@+id/candidate_name_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Christian Lawrence"
+            android:layout_weight= "1"
+            android:paddingLeft="16dp"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
