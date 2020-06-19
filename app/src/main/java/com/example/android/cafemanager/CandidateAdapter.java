@@ -43,6 +43,8 @@ public class CandidateAdapter extends ArrayAdapter<Candidate> {
         TextView candidateEmailTextView = (TextView) listItemView.findViewById(R.id.candidate_email_text_view);
         candidateEmailTextView .setText(currentCandidate.getEmail());
 
+        TextView candidateCafeNumber = (TextView) listItemView.findViewById((R.id.cafe_text_view));
+        candidateCafeNumber.setText(currentCandidate.getCafeNumber());
 
         return listItemView;
     }

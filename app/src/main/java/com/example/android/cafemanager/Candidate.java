@@ -9,6 +9,7 @@ public class Candidate {
     private String phoneNumber;
     private String position;
     private String email;
+    private String cafeNumber;
 
 
     /**
@@ -17,10 +18,12 @@ public class Candidate {
      * @param contactNumber
      * @param positionApplied
      */
-    public Candidate(String applicantName, String contactNumber, String positionApplied) {
+    public Candidate(String applicantName, String contactNumber, String positionApplied, String cafe) {
         candidateName = applicantName;
         phoneNumber = contactNumber;
         position = positionApplied;
+        cafeNumber = cafe;
+
     }
 
     /**
@@ -31,11 +34,12 @@ public class Candidate {
      * @param positionApplied
      */
 
-    public Candidate(String applicantName, String contactNumber,String positionApplied, String candidateEmail){
+    public Candidate(String applicantName, String contactNumber,String positionApplied, String candidateEmail, String cafe){
         candidateName=applicantName;
         phoneNumber = contactNumber;
         email= candidateEmail;
         position = positionApplied;
+        cafeNumber = cafe;
 
     }
 
@@ -51,5 +55,8 @@ public class Candidate {
     }
     public String getEmail(){
         return email;
+    }
+    public String getCafeNumber(){
+        return cafeNumber;
     }
 }

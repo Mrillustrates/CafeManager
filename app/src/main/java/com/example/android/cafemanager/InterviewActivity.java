@@ -16,7 +16,7 @@ public class InterviewActivity extends AppCompatActivity{
 
         ArrayList<Candidate> candidates = new ArrayList<Candidate>();
 
-        candidates.add(new Candidate("Chris Lawrence", "4152313814", "Deliver Driver", "example@gmail.com" ));
+        candidates.add(new Candidate("Chris Lawrence", "4152313814", "Deliver Driver", "example@gmail.com", "Cafe 1281" ));
 
         CandidateAdapter adapter = new CandidateAdapter(this, candidates);
         ListView listView = (ListView) findViewById(R.id.list);

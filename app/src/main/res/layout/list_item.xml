@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text = "Christian Lawrence"
+                tools:text = "Christian Lawrence"
                 android:id = "@+id/candidate_name_text_view"
 
                 android:textColor="@android:color/black"
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="333-333-3333"
+            tools:text="333-333-3333"
             android:id = "@+id/phone_text_view"
             android:textColor="@android:color/black"
             android:textSize="18sp"
@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Delivery Driver"
+                tools:text="Delivery Driver"
                 android:id = "@+id/candidate_position_text_view"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
@@ -54,11 +54,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="example@gmail.com"
+                tools:text="example@gmail.com"
                 android:id = "@+id/candidate_email_text_view"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:gravity="top"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:text="Cafe 1281"
+                android:textStyle="bold"
+                android:id = "@+id/cafe_text_view"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="top"/>
+
 
 
         </LinearLayout>
