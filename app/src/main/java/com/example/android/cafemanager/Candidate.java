@@ -11,6 +11,9 @@ public class Candidate {
     private String email;
     private String cafeNumber;
 
+    private int nImageResourceId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Constructor if you just have name, ph # and position
@@ -18,12 +21,12 @@ public class Candidate {
      * @param contactNumber
      * @param positionApplied
      */
-    public Candidate(String applicantName, String contactNumber, String positionApplied, String cafe) {
+    public Candidate(String applicantName, String contactNumber, String positionApplied, String cafe , int imageResourceId) {
         candidateName = applicantName;
         phoneNumber = contactNumber;
         position = positionApplied;
         cafeNumber = cafe;
-
+        nImageResourceId = imageResourceId;
     }
 
     /**
@@ -56,7 +59,22 @@ public class Candidate {
     public String getEmail(){
         return email;
     }
+
+    public int getnImageResourceId() {
+        return nImageResourceId;
+    }
+
+    public void setnImageResourceId(int nImageResourceId) {
+        this.nImageResourceId = nImageResourceId;
+    }
+
     public String getCafeNumber(){
         return cafeNumber;
-    }
+
+
 }
+    public boolean hasImage(){
+        return nImageResourceId != NO_IMAGE_PROVIDED;}
+}
+
+

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class CandidateAdapter extends ArrayAdapter<Candidate> {
         TextView candidatePhoneNumberTextView = (TextView) listItemView.findViewById(R.id.phone_text_view);
         candidatePhoneNumberTextView.setText(currentCandidate.getPhoneNumber());
 
-        TextView candidateJobPositionTextView = (TextView) listItemView.findViewById(R.id.candidate_position_text_view);
+        TextView candidateJobPositionTextView = (TextView) listItemView.findViewById(R.id.position_text_view);
         candidateJobPositionTextView.setText(currentCandidate.getPosition());
 
         TextView candidateEmailTextView = (TextView) listItemView.findViewById(R.id.candidate_email_text_view);
@@ -45,6 +46,19 @@ public class CandidateAdapter extends ArrayAdapter<Candidate> {
 
         TextView candidateCafeNumber = (TextView) listItemView.findViewById((R.id.cafe_text_view));
         candidateCafeNumber.setText(currentCandidate.getCafeNumber());
+
+        ImageView defaultImageView = (ImageView) listItemView.findViewById(R.id.position_picture);
+
+        if(currentCandidate.hasImage()){
+            defaultImageView.setImageResource(currentCandidate.getnImageResourceId());
+
+            //Make image visible if there is one
+            defaultImageView.setVisibility(View.VISIBLE);
+        }
+        else {
+            //Hide the image if it is meant to be hidden
+            defaultImageView.setVisibility(View.GONE);
+        }
 
         return listItemView;
     }

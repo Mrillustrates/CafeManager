@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         candidates.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent interviewsIntent = new Intent(MainActivity.this, InterviewActivity.class);
+                Intent interviewsIntent = new Intent(MainActivity.this, CafeListingActivity.class);
                 startActivity(interviewsIntent);
             }
         });
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(statusIntent);
             }
         });
+
+
     }
 
 

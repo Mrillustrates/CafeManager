@@ -2,4 +2,6 @@
     <string name="app_name">CafeManager</string>
     <string name ="category_interviews"> Candidate Interviews</string>
     <string name = "category_status"> Status </string>
+    <string name = "st_louis"> St. Louis </string>
+    <string name = "minneapolis"> Minneapolis </string>
 </resources>

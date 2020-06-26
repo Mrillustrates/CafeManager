@@ -14,12 +14,14 @@ public class InterviewActivity extends AppCompatActivity{
         setContentView(R.layout.interviews_list);
 
 
-        ArrayList<Candidate> candidates = new ArrayList<Candidate>();
+
+      /*  ArrayList<Candidate> candidates = new ArrayList<Candidate>();
 
         candidates.add(new Candidate("Chris Lawrence", "4152313814", "Deliver Driver", "example@gmail.com", "Cafe 1281" ));
 
         CandidateAdapter adapter = new CandidateAdapter(this, candidates);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
+        */
 }
     }
