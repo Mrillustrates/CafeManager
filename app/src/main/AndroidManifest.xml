@@ -19,6 +19,7 @@
         <activity android:name=".InterviewActivity" android:label="@string/category_interviews"/>
         <activity android:name=".StatusActivity" android:label="@string/category_status"/>
         <activity android:name=".CafeListingActivity" android:label="Cafes" />
+        <activity android:name=".StLouisActivity" android:label="@string/category_st_louis"/>
     </application>
 
 </manifest>

@@ -4,4 +4,5 @@
     <string name = "category_status"> Status </string>
     <string name = "st_louis"> St. Louis </string>
     <string name = "minneapolis"> Minneapolis </string>
+    <string name = "category_st_louis"> St. Louis</string>
 </resources>

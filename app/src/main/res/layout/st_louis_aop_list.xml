@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="@color/tan_background" android:orientation="vertical"     xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Regions categorized by AOP name please select: "
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id = "@+id/st_louis_region_1_aop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "LAWRENCE"
+        android:background="@color/category_status"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id = "@+id/st_louis_region_2_aop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "BARNES"
+        android:background="@color/category_status"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id = "@+id/st_louis_region_3_aop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "MONTOYA"
+        android:background="@color/category_status"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
