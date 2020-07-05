@@ -5,4 +5,7 @@
     <string name = "st_louis"> St. Louis </string>
     <string name = "minneapolis"> Minneapolis </string>
     <string name = "category_st_louis"> St. Louis</string>
+    <string name = "Cafe314"> 314 </string>
+    <string name = "Lawrence"> Lawrence </string>
+    <string name = "Cafe636"> 636</string>
 </resources>

@@ -21,10 +21,11 @@ public class Candidate {
      * @param contactNumber
      * @param positionApplied
      */
-    public Candidate(String applicantName, String contactNumber, String positionApplied, String cafe , int imageResourceId) {
+    public Candidate(String applicantName, String contactNumber, String positionApplied, String candidateEmail,  String cafe , int imageResourceId) {
         candidateName = applicantName;
         phoneNumber = contactNumber;
         position = positionApplied;
+        email = candidateEmail;
         cafeNumber = cafe;
         nImageResourceId = imageResourceId;
     }

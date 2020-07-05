@@ -9,7 +9,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class LawrenceStLouisFragment extends Fragment{
+public class LawrenceStLouisFragment314 extends Fragment{
+
+    int dtmId = R.drawable.dtm_96;
+    int cashierId = R.drawable.cashier50;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -17,12 +20,12 @@ public class LawrenceStLouisFragment extends Fragment{
     private String mParam1;
     private String mParam2;
 
-    public LawrenceStLouisFragment(){
+    public LawrenceStLouisFragment314(){
 
     }
 
-    public static LawrenceStLouisFragment newInstance(String param1, String param2) {
-        LawrenceStLouisFragment fragment = new LawrenceStLouisFragment();
+    public static LawrenceStLouisFragment314 newInstance(String param1, String param2) {
+        LawrenceStLouisFragment314 fragment = new LawrenceStLouisFragment314();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -41,7 +44,7 @@ public class LawrenceStLouisFragment extends Fragment{
 
         ArrayList<Candidate> candidates = new ArrayList<Candidate>();
 
-        candidates.add(new Candidate("Chris Lawrence", "4152313814", "Deliver Driver", "example@gmail.com", "Cafe 1281" ));
+        candidates.add(new Candidate("Chris Lawrence", "4152313814", "Deliver Driver", "example@gmail.com", "Cafe 314" , dtmId));
 
         CandidateAdapter adapter = new CandidateAdapter(getActivity(), candidates);
         ListView listView = (ListView) rootView.findViewById(R.id.list);

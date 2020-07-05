@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.cafemanager">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +25,7 @@
         <activity android:name=".StatusActivity" android:label="@string/category_status"/>
         <activity android:name=".CafeListingActivity" android:label="Cafes" />
         <activity android:name=".StLouisActivity" android:label="@string/category_st_louis"/>
+        <activity android:name=".LawrenceStLouisLandingPage" android:label="Lawrence"></activity>
     </application>
 
 </manifest>

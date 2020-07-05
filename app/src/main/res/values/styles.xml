@@ -21,4 +21,19 @@
 
     </style>
 
+
+    <!-- Style for a tab that display s a category name -->
+    <style name="CustomTabs" parent="Base.Widget.Design.TabLayout">
+        <item name = "tabIndicatorColor"> @android:color/white </item>
+        <item name = "tabSelectedTextColor"> @android:color/white </item>
+        <item name = "tabBackground">@color/colorPrimary </item>
+        <item name = "tabTextAppearance">@style/CategoryTabTextAppearance</item>
+
+
+    </style>
+
+    <style name="CategoryTabTextAppearance" parent = "TextAppearance.Design.Tab">
+    <item name = "android:textColor"> #A8A19E </item>
+    </style>
+
 </resources>
